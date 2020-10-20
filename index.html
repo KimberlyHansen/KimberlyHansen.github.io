@@ -5,6 +5,36 @@
 body {
   background-color: #114B5F
 }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #60712F;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #EACDC2;
+}
+
+.active {
+  background-color: #114B5F;
+}
 h1 {
   font-family: archer, arial;
   color: #EACDC2
@@ -16,6 +46,11 @@ p {
 </style>
 </head>
 <body>
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">Who am I</a></li>
+  <li><a href="#contact">Fungi</a></li>
+</ul>
 <h1>Welcome to Kimberly's Foraged Fungi</h1>
 <p>All fungi were observed in Ontario, Canada</p>
 </body>
